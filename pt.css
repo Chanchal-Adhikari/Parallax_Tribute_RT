@@ -1,0 +1,234 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.h4{
+    text-align: end;
+}
+.image_container {
+    border-radius: 50%;
+    overflow:hidden;
+    width: 180px;
+  height: 200px;
+  box-shadow: 0 0 30px 3px rgba(0, 0, 0, .2);
+  transition: transform 0.78s ease, box-shadow 0.78s ease;
+
+  }
+  .image_container img{
+    width: 192px;
+    height: 199.9px;
+   
+  }
+  .image_container:hover{ 
+    transform: scale(1.2);
+    z-index: 1;
+ box-shadow: 
+     0 -15px 24px rgba(255, 132, 1, 0.948),
+     0 15px 24px rgba(65, 255, 2, 0.91);
+    }
+
+  /**.image_container span{
+    position:relative;
+    display:block;
+  }
+  .image_container span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,orangered);
+  }
+  .image_container:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  .image_container span:nth-child(2){
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,orangered);
+  }
+  .image_container:hover span:nth-child(2){
+    right: 100%;
+    transition: 1s;
+    transform: scale(1.2);
+    z-index: 1;
+  }**/
+  
+.pimg1 {
+  background-image: url(drawing.png);
+  min-height: 100%;
+}
+.pimg2 {
+  background-image: url(jet-black-range-rover-0vbddl40q8x5n0bj.jpg);
+  min-height: 430px;
+}
+.pimg3 {
+  background-image: url(https://i0.wp.com/greenmakers.com/wp-content/uploads/2021/12/1.jpg?fit=1440%2C800&ssl=1);
+  min-height: 430px;
+}
+.pimg4 {
+    background-image: url(https://etimg.etb2bimg.com/photo/104858891.cms);
+    min-height: 430px;
+  }
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+.textBg {
+  background: #313534;
+  color: #fff;
+  padding: 15px;
+
+}
+
+.section {
+padding: 50px 80px;
+  text-align: center;
+}
+.section-light {
+    padding: 0%;
+  background-color: #f4f4f4;
+  color: #666;
+  height: 500px;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+.my{
+  
+    padding: 50px 80px;
+}
+.bubab{
+  position: relative;
+  bottom: 140px;
+}
+.bubab .meow1{
+  color: dodgerblue;
+}
+/*.bubab h2{
+  text-decoration:underline ;
+  cursor: pointer;
+  text-decoration-thickness: 2px;
+  text-underline-offset:7px ;
+}*/
+.about_section p{
+  position: relative;
+  bottom: 70px;
+}
+.pimg4 .ptext{
+    font-size: 19px;
+    letter-spacing: 1px;
+    text-transform: none;
+  font-family:cursive;
+
+}
+.pimg4 .textBg{
+  border-radius: 45% 45% 45% 45%;
+}
+.imglast img{
+  width:"200px";
+  height: 200px;
+  padding-left:40%;
+  margin-top: 5px;
+}
+i{
+  font-size: 12px;
+  font-family:"Lato", sans-serif;
+}
+.section-dark h2{
+  font-family: 'Times New Roman', Times, serif;
+}
+.meow{
+  position: relative;
+  text-decoration: none;
+
+}
+.meow::before{
+  content: "";
+  position: absolute;
+  left:0;
+  bottom:-4.7px;
+  width:0%;
+  background-color:#000;
+  height:2px;
+  transition: 0.5s;
+
+}
+.meow::after{
+  content: "";
+  position: absolute;
+  right:0;
+  bottom:-4.7px;
+  width:0%;
+  background-color:#000;
+  height:2px;
+  transition: 0.5s;
+}
+.meow:hover::before,
+.meow:hover::after{
+  width: 51%;
+}
+ul{
+  display:flex;
+  gap:20px;
+  position: relative;
+  left: 292px;
+  top: 7px;
+
+}
+ul li{
+  list-style: none;
+  font-size: 20px;
+  color:var(--color);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+ul li:hover{
+  box-shadow: inset 0 0 0 2px #232323;
+  background-color: var(--color);
+color: #fff;
+scale: 1.1;
+}
+.name{
+  font-size: 27px;
+  font-family: brush script mt;
+  text-decoration: none blue;
+  text-decoration-thickness:0.03px;
+  text-underline-offset: 5px;
+}
